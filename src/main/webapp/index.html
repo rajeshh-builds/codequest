@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeQuest - Master Programming Through Quests</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <style>
+        .hero-section {
+            text-align: center;
+            padding: 5rem 1rem 4rem 1rem;
+            position: relative;
+        }
+        .hero-badge {
+            display: inline-block;
+            background: rgba(45, 212, 191, 0.1);
+            color: var(--primary-neon);
+            border: 1px solid rgba(45, 212, 191, 0.3);
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-family: var(--font-heading);
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 0 15px rgba(45, 212, 191, 0.2);
+        }
+        .hero-title {
+            font-size: 3.5rem;
+            font-weight: 900;
+            line-height: 1.15;
+            margin-bottom: 1.2rem;
+            background: linear-gradient(135deg, #ffffff 40%, var(--primary-neon) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .hero-desc {
+            max-width: 650px;
+            margin: 0 auto 2.5rem auto;
+            color: var(--text-muted);
+            font-size: 1.25rem;
+            line-height: 1.6;
+        }
+        .hero-cta {
+            display: flex;
+            justify-content: center;
+            gap: 1.2rem;
+            flex-wrap: wrap;
+        }
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 3.5rem;
+        }
+        .feature-card {
+            background: var(--surface-alt);
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            padding: 2rem;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary-neon);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.4), 0 0 20px var(--primary-glow);
+        }
+        .feature-icon {
+            font-size: 2.2rem;
+            margin-bottom: 1rem;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html" class="brand-logo">
+            <div class="brand-icon">&lt;&gt;</div>
+            <div class="brand-text">CODE<span>QUEST</span></div>
+        </a>
+        <div class="nav-links">
+            <a href="LeaderboardServlet">Leaderboard</a>
+            <a href="login.jsp" class="btn-secondary btn-sm">Sign In</a>
+            <a href="register.jsp" class="btn-primary btn-sm">Join Quest</a>
+        </div>
+    </div>
+
+    <div class="container" style="background: transparent; border: none; box-shadow: none;">
+        <div class="hero-section">
+            <div class="hero-badge">&#9670; Gamified Coding Arena &#9670;</div>
+            <h1 class="hero-title">Level Up Your Code.<br>Conquer The Matrix.</h1>
+            <p class="hero-desc">
+                Engage in immersive developer challenges, earn XP rewards, unlock cyber tiers, and dominate the global coder leaderboard.
+            </p>
+            <div class="hero-cta">
+                <a href="register.jsp" class="btn-primary" style="padding: 14px 32px; font-size: 1.05rem;">
+                    &#9654; Initiate Quest
+                </a>
+                <a href="login.jsp" class="btn-secondary" style="padding: 14px 28px; font-size: 1.05rem;">
+                    Player Login
+                </a>
+                <a href="login.jsp?role=admin" class="btn-secondary" style="padding: 14px 24px; font-size: 0.95rem; border-color: rgba(168, 85, 247, 0.4); color: var(--accent-purple);">
+                    &#9881; Overseer Portal
+                </a>
+            </div>
+        </div>
+
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">&#128293;</div>
+                <h3 style="color: var(--primary-neon); margin-bottom: 0.6rem;">Adaptive Missions</h3>
+                <p style="color: var(--text-muted); line-height: 1.5;">
+                    Challenge your skills in Java, Algorithms, Data Structures, OOP, Concurrency, and SQL across multiple difficulty levels.
+                </p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">&#9889;</div>
+                <h3 style="color: var(--accent-purple); margin-bottom: 0.6rem;">XP &amp; Level Matrix</h3>
+                <p style="color: var(--text-muted); line-height: 1.5;">
+                    Gain XP with every solved mission, advance through hacker tiers from Novice to Cyber Overlord, and showcase your milestones.
+                </p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">&#127942;</div>
+                <h3 style="color: var(--accent-amber); margin-bottom: 0.6rem;">Real-Time Leaderboard</h3>
+                <p style="color: var(--text-muted); line-height: 1.5;">
+                    Compete against fellow developers worldwide and claim your rightful place on the neon podium of top architects.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2026 CodeQuest Platform. Built with Java 17, Servlets, JDBC &amp; Tomcat 10.1.
+    </footer>
+</body>
+</html>

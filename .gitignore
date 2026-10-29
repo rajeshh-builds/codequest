@@ -1,0 +1,14 @@
+# Build artifacts
+target/
+*.log
+
+# IDE & Editor files
+.vscode/
+.idea/
+.settings/
+.project
+.classpath
+
+# OS files
+Thumbs.db
+Desktop.ini

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee
+                             https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
+         version="6.0">
+
+    <display-name>CodeQuest Platform</display-name>
+    <description>Gamified Programming Learning Platform</description>
+
+    <!-- Welcome File List -->
+    <welcome-file-list>
+        <welcome-file>index.html</welcome-file>
+        <welcome-file>login.jsp</welcome-file>
+    </welcome-file-list>
+
+    <!-- Session Configuration -->
+    <session-config>
+        <session-timeout>60</session-timeout>
+        <cookie-config>
+            <http-only>true</http-only>
+            <secure>false</secure>
+        </cookie-config>
+        <tracking-mode>COOKIE</tracking-mode>
+    </session-config>
+
+    <!-- Register Servlet -->
+    <servlet>
+        <servlet-name>RegisterServlet</servlet-name>
+        <servlet-class>com.codequest.servlet.RegisterServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RegisterServlet</servlet-name>
+        <url-pattern>/RegisterServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- Login Servlet -->
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>com.codequest.servlet.LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/LoginServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- Logout Servlet -->
+    <servlet>
+        <servlet-name>LogoutServlet</servlet-name>
+        <servlet-class>com.codequest.servlet.LogoutServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LogoutServlet</servlet-name>
+        <url-pattern>/LogoutServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- Dashboard Servlet -->
+    <servlet>
+        <servlet-name>DashboardServlet</servlet-name>
+        <servlet-class>com.codequest.servlet.DashboardServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DashboardServlet</servlet-name>
+        <url-pattern>/DashboardServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- Missions Servlet -->
+    <servlet>
+        <servlet-name>MissionsServlet</servlet-name>
+        <servlet-class>com.codequest.servlet.MissionsServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MissionsServlet</servlet-name>
+        <url-pattern>/MissionsServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- Mission Detail Servlet -->
+    <servlet>
+        <servlet-name>MissionDetailServlet</servlet-name>
+        <servlet-class>com.codequest.servlet.MissionDetailServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MissionDetailServlet</servlet-name>
+        <url-pattern>/MissionDetailServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- Submit Mission Servlet -->
+    <servlet>
+        <servlet-name>SubmitMissionServlet</servlet-name>
+        <servlet-class>com.codequest.servlet.SubmitMissionServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SubmitMissionServlet</servlet-name>
+        <url-pattern>/SubmitMissionServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- Leaderboard Servlet -->
+    <servlet>
+        <servlet-name>LeaderboardServlet</servlet-name>
+        <servlet-class>com.codequest.servlet.LeaderboardServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LeaderboardServlet</servlet-name>
+        <url-pattern>/LeaderboardServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- Profile Servlet -->
+    <servlet>
+        <servlet-name>ProfileServlet</servlet-name>
+        <servlet-class>com.codequest.servlet.ProfileServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ProfileServlet</servlet-name>
+        <url-pattern>/ProfileServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- Admin Dashboard Servlet -->
+    <servlet>
+        <servlet-name>AdminDashboardServlet</servlet-name>
+        <servlet-class>com.codequest.servlet.AdminDashboardServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AdminDashboardServlet</servlet-name>
+        <url-pattern>/AdminDashboardServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- Admin Mission Servlet -->
+    <servlet>
+        <servlet-name>AdminMissionServlet</servlet-name>
+        <servlet-class>com.codequest.servlet.AdminMissionServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AdminMissionServlet</servlet-name>
+        <url-pattern>/AdminMissionServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- Admin Delete Mission Servlet -->
+    <servlet>
+        <servlet-name>AdminDeleteMissionServlet</servlet-name>
+        <servlet-class>com.codequest.servlet.AdminDeleteMissionServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AdminDeleteMissionServlet</servlet-name>
+        <url-pattern>/AdminDeleteMissionServlet</url-pattern>
+    </servlet-mapping>
+
+</web-app>
