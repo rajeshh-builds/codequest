@@ -1,6 +1,7 @@
 # Build artifacts
 target/
 *.log
+cloudflared.exe
 
 # IDE & Editor files
 .vscode/

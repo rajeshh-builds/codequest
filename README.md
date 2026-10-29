@@ -1,6 +1,6 @@
 # CodeQuest - Gamified Web-Based Programming Learning Platform
 
-[![Direct Website Link](https://img.shields.io/badge/Open%20in%20Chrome-http%3A%2F%2Flocalhost%3A8080%2Fcodequest-00f2fe?style=for-the-badge&logo=googlechrome&logoColor=white)](http://localhost:8080/codequest)
+[![Public Live Link](https://img.shields.io/badge/Public%20Live%20Website-Click%20To%20Open-00f2fe?style=for-the-badge&logo=googlechrome&logoColor=white)](https://consumer-artist-naples-steve.trycloudflare.com/codequest/)
 [![GitHub](https://img.shields.io/badge/GitHub-samachakradhar%2Fcodequest-181717?style=for-the-badge&logo=github)](https://github.com/samachakradhar/codequest)
 [![Java](https://img.shields.io/badge/Java-17%20%7C%2021%20%7C%2025-orange.svg)](https://www.oracle.com/java/)
 [![Tomcat](https://img.shields.io/badge/Apache%20Tomcat-10.1%20%7C%2011-yellow.svg)](https://tomcat.apache.org/)
@@ -9,12 +9,15 @@
 
 ---
 
-> 🌐 **Website Direct URL (Click to Open in Chrome / Browser):**  
-> ## 🚀 **[http://localhost:8080/codequest](http://localhost:8080/codequest)**  
+> 🌐 **Public Live Website URL (Opens on Any Laptop, Phone, or Browser Worldwide):**  
+> ## 🚀 **[https://consumer-artist-naples-steve.trycloudflare.com/codequest/](https://consumer-artist-naples-steve.trycloudflare.com/codequest/)**  
 >
-> **1-Click Launchers:**
-> - Double-click `start-server.bat` to compile, configure JVM, deploy, and launch the web app.
-> - Double-click `open-in-chrome.bat` to instantly open Google Chrome to `http://localhost:8080/codequest`.
+> *(Click the link above to view and test the website live from anywhere without installing Java, Tomcat, or MySQL!)*
+>
+> **Local Machine Launchers (For Local Development):**
+> - `http://localhost:8080/codequest` (Localhost fallback)
+> - Run `start-server.bat` to launch the local Tomcat server.
+> - Run `start-public-tunnel.bat` to create a live public tunnel to the internet.
 
 ---
 
