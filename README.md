@@ -1,9 +1,22 @@
 # CodeQuest - Gamified Web-Based Programming Learning Platform
 
+[![Direct Website Link](https://img.shields.io/badge/Open%20in%20Chrome-http%3A%2F%2Flocalhost%3A8080%2Fcodequest-00f2fe?style=for-the-badge&logo=googlechrome&logoColor=white)](http://localhost:8080/codequest)
+[![GitHub](https://img.shields.io/badge/GitHub-samachakradhar%2Fcodequest-181717?style=for-the-badge&logo=github)](https://github.com/samachakradhar/codequest)
 [![Java](https://img.shields.io/badge/Java-17%20%7C%2021%20%7C%2025-orange.svg)](https://www.oracle.com/java/)
-[![Tomcat](https://img.shields.io/badge/Apache%20Tomcat-10.1%20(Jakarta%20EE%2010)-yellow.svg)](https://tomcat.apache.org/)
+[![Tomcat](https://img.shields.io/badge/Apache%20Tomcat-10.1%20%7C%2011-yellow.svg)](https://tomcat.apache.org/)
 [![Database](https://img.shields.io/badge/MySQL-8.0+-blue.svg)](https://www.mysql.com/)
-[![Aesthetic](https://img.shields.io/badge/UI%2FUX-Cyber%20Neon%20Gaming-2dd4bf.svg)]()
+[![Aesthetic](https://img.shields.io/badge/UI%2FUX-Cyber%20Neon%20Gaming-00f2fe.svg)]()
+
+---
+
+> 🌐 **Website Direct URL (Click to Open in Chrome / Browser):**  
+> ## 🚀 **[http://localhost:8080/codequest](http://localhost:8080/codequest)**  
+>
+> **1-Click Launchers:**
+> - Double-click `start-server.bat` to compile, configure JVM, deploy, and launch the web app.
+> - Double-click `open-in-chrome.bat` to instantly open Google Chrome to `http://localhost:8080/codequest`.
+
+---
 
 **CodeQuest** is a web-based programming learning platform designed with a sleek, dark cyber-gaming aesthetic. Developers solve algorithmic dilemmas, advance through security clearance tiers, earn XP bounties, and climb the real-time global leaderboard.
 

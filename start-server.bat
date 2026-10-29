@@ -61,7 +61,7 @@ echo The CodeQuest platform is available at:
 echo URL: http://localhost:8080/codequest
 echo ==============================================================
 ping 127.0.0.1 -n 5 >nul
-start "" "http://localhost:8080/codequest"
+start chrome "http://localhost:8080/codequest" 2>nul || start "" "http://localhost:8080/codequest"
 
 echo Server process started. Check the Tomcat console window for live logs.
 pause
