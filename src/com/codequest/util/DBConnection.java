@@ -62,14 +62,35 @@ public class DBConnection {
         if (props.getProperty("db.password") != null) password = props.getProperty("db.password").trim();
 
         String envUrl = System.getenv("CQ_DB_URL");
+        if (envUrl == null || envUrl.trim().isEmpty()) {
+            envUrl = System.getenv("MYSQL_URL");
+        }
+        if (envUrl == null || envUrl.trim().isEmpty()) {
+            String dbHost = System.getenv("MYSQLHOST");
+            String dbPort = System.getenv("MYSQLPORT");
+            String dbName = System.getenv("MYSQLDATABASE");
+            if (dbHost != null && dbName != null) {
+                if (dbPort == null || dbPort.trim().isEmpty()) dbPort = "3306";
+                envUrl = "jdbc:mysql://" + dbHost + ":" + dbPort + "/" + dbName + "?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC";
+            }
+        }
         if (envUrl != null && !envUrl.trim().isEmpty()) {
+            if (!envUrl.startsWith("jdbc:")) {
+                envUrl = "jdbc:" + envUrl;
+            }
             url = envUrl;
         }
         String envUser = System.getenv("CQ_DB_USER");
+        if (envUser == null || envUser.trim().isEmpty()) {
+            envUser = System.getenv("MYSQLUSER");
+        }
         if (envUser != null && !envUser.trim().isEmpty()) {
             user = envUser;
         }
         String envPass = System.getenv("CQ_DB_PASSWORD");
+        if (envPass == null) {
+            envPass = System.getenv("MYSQLPASSWORD");
+        }
         if (envPass != null) {
             password = envPass;
         }

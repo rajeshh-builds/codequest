@@ -1,27 +1,38 @@
 # CodeQuest - Gamified Web-Based Programming Learning Platform
 
-[![Public Live Link](https://img.shields.io/badge/Public%20Live%20Website-Click%20To%20Open-00f2fe?style=for-the-badge&logo=googlechrome&logoColor=white)](https://consumer-artist-naples-steve.trycloudflare.com/codequest/)
 [![GitHub](https://img.shields.io/badge/GitHub-rajeshh--builds%2Fcodequest-181717?style=for-the-badge&logo=github)](https://github.com/rajeshh-builds/codequest)
+[![Docker Ready](https://img.shields.io/badge/Docker-Ready-2496ED?style=for-the-badge&logo=docker&logoColor=white)](Dockerfile)
 [![Java](https://img.shields.io/badge/Java-17%20%7C%2021%20%7C%2025-orange.svg)](https://www.oracle.com/java/)
 [![Tomcat](https://img.shields.io/badge/Apache%20Tomcat-10.1%20%7C%2011-yellow.svg)](https://tomcat.apache.org/)
 [![Database](https://img.shields.io/badge/MySQL-8.0+-blue.svg)](https://www.mysql.com/)
-[![Aesthetic](https://img.shields.io/badge/UI%2FUX-Cyber%20Neon%20Gaming-00f2fe.svg)]()
 
 ---
 
-> 🌐 **Public Live Website URL (Opens on Any Laptop, Phone, or Browser Worldwide):**  
-> ## 🚀 **[https://consumer-artist-naples-steve.trycloudflare.com/codequest/](https://consumer-artist-naples-steve.trycloudflare.com/codequest/)**  
->
-> *(Click the link above to view and test the website live from anywhere without installing Java, Tomcat, or MySQL!)*
->
-> **Local Machine Launchers (For Local Development):**
-> - `http://localhost:8080/codequest` (Localhost fallback)
-> - Run `start-server.bat` to launch the local Tomcat server.
-> - Run `start-public-tunnel.bat` to create a live public tunnel to the internet.
+## 🚀 Quick Deployment Guide
 
----
+### Option 1: One-Click Cloud VM Deployment (Railway / Render / Fly.io)
+This repository includes a multi-stage production `Dockerfile`, `docker-compose.yml`, `render.yaml`, and `railway.json`.
 
-**CodeQuest** is a web-based programming learning platform designed with a sleek, dark cyber-gaming aesthetic. Developers solve algorithmic dilemmas, advance through security clearance tiers, earn XP bounties, and climb the real-time global leaderboard.
+#### Deploy on Railway:
+1. Go to [Railway](https://railway.app/) and create a **New Project**.
+2. Select **Deploy from GitHub repo** -> `rajeshh-builds/codequest`.
+3. Add a **MySQL** database in the same project.
+4. Railway automatically detects `Dockerfile` and sets up `CQ_DB_URL`, `CQ_DB_USER`, and `CQ_DB_PASSWORD` via environment variables.
+
+#### Deploy on Render:
+1. Go to [Render](https://render.com/) -> **New** -> **Blueprint**.
+2. Connect your repo `rajeshh-builds/codequest` (it uses `render.yaml` to spin up both MySQL & Tomcat containers automatically).
+
+### Option 2: Local Docker Container
+Run the entire stack (Tomcat 10.1 + MySQL 8.0) with a single command:
+```bash
+docker compose up -d
+```
+Visit: `http://localhost:8080/`
+
+### Option 3: Local Windows Native Launch
+- Run `start-server.bat` to launch on local Tomcat (`http://localhost:8088/codequest`).
+- Run `start-public-tunnel.bat` to share the local instance live worldwide via Cloudflare.
 
 ---
 
