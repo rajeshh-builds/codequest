@@ -135,16 +135,13 @@ This generates `codequest.war`.
 
 ---
 
-## Seed Accounts
+## Accounts
 
 ### Admin Account (Overseer):
 - **Username:** `admin`
 - **Password:** `admin123`
-- **Access URL:** `http://localhost:8080/codequest/login.jsp?role=admin`
+- **Access URL:** `http://localhost:8088/codequest/login.jsp?role=admin`
 
-### Pre-loaded Students (for testing & Leaderboard):
-- **Username:** `NeoCoder` | **Password:** `pass123` (Level 9, 850 XP)
-- **Username:** `CyberKnight` | **Password:** `pass123` (Level 7, 600 XP)
-- **Username:** `PixelValkyrie` | **Password:** `pass123` (Level 5, 425 XP)
-- **Username:** `ByteHunter` | **Password:** `pass123` (Level 3, 250 XP)
-- Or click **"Join Quest"** to register your own custom gamer identity!
+### Primary Developer Account:
+- **Username:** `rajesh` | **Password:** `rajesh123` (Level 10, 950 XP)
+- Or click **"Join Quest"** to register your own custom identity!

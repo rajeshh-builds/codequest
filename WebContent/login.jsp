@@ -139,18 +139,15 @@
             </button>
         </form>
 
-        <!-- Fast Demo Credentials Quick-Fill -->
+        <!-- Fast Credentials Help -->
         <div style="margin-top: 1.5rem; padding-top: 1.2rem; border-top: 1px solid rgba(255, 255, 255, 0.08);">
             <div style="font-size: 0.8rem; color: var(--text-dim); text-transform: uppercase; font-family: var(--font-subheading); letter-spacing: 0.05em; margin-bottom: 6px;">
-                Instant Demo Autofill:
+                Portal Access Helper:
             </div>
             <div class="quick-fill-container">
                 <% if (!isAdmin) { %>
-                    <button type="button" class="quick-fill-btn" onclick="fillCreds('NeoCoder', 'pass123')">
-                        &#128100; NeoCoder (Lvl 12)
-                    </button>
-                    <button type="button" class="quick-fill-btn" onclick="fillCreds('CyberKnight', 'pass123')">
-                        &#128100; CyberKnight (Lvl 7)
+                    <button type="button" class="quick-fill-btn" onclick="fillCreds('rajesh', 'rajesh123')">
+                        &#128100; rajesh (Dev)
                     </button>
                 <% } else { %>
                     <button type="button" class="quick-fill-btn" onclick="fillCreds('admin', 'admin123')">

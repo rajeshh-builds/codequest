@@ -89,19 +89,11 @@ INSERT IGNORE INTO missions (id, title, description, category, difficulty, choic
 (8, 'Singleton Integrity', 'In the classic Double-Checked Locking implementation of the Singleton pattern in Java, which keyword is required on the instance variable to prevent instruction reordering?', 'Design Patterns', 'Hard', 'transient', 'synchronized', 'volatile', 'final', 'volatile', 250);
 
 -- ==============================================================
--- Seed Data: Initial Users for Leaderboard Showcase
+-- Seed Data: Initial Real Users for Developer Platform
 -- ==============================================================
 INSERT IGNORE INTO users (id, username, email, password, xp, level) VALUES
-(1, 'NeoCoder', 'neo@codequest.io', 'pass123', 850, 9),
-(2, 'CyberKnight', 'knight@codequest.io', 'pass123', 600, 7),
-(3, 'PixelValkyrie', 'valkyrie@codequest.io', 'pass123', 425, 5),
-(4, 'ByteHunter', 'hunter@codequest.io', 'pass123', 250, 3),
-(5, 'ShadowDev', 'shadow@codequest.io', 'pass123', 100, 2);
+(1, 'rajesh', 'rajesh@codequest.io', 'rajesh123', 950, 10);
 
--- Seed some completed submissions
+-- Initial completed missions for rajesh
 INSERT IGNORE INTO mission_submissions (user_id, mission_id, is_correct) VALUES
-(1, 1, TRUE), (1, 2, TRUE), (1, 3, TRUE), (1, 4, TRUE), (1, 5, TRUE), (1, 6, TRUE), (1, 7, TRUE),
-(2, 1, TRUE), (2, 2, TRUE), (2, 3, TRUE), (2, 4, TRUE), (2, 5, TRUE),
-(3, 1, TRUE), (3, 2, TRUE), (3, 3, TRUE), (3, 6, TRUE),
-(4, 1, TRUE), (4, 2, TRUE), (4, 6, TRUE),
-(5, 1, TRUE), (5, 6, TRUE);
+(1, 1, TRUE), (1, 2, TRUE), (1, 3, TRUE), (1, 4, TRUE), (1, 5, TRUE), (1, 6, TRUE), (1, 7, TRUE), (1, 8, TRUE);
