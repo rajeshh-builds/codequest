@@ -1,47 +1,49 @@
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800;900&family=Rajdhani:wght@500;600;700&family=Outfit:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
 
 :root {
-    --bg-dark: #060911;
-    --bg-darker: #030509;
-    --bg-card: rgba(13, 20, 36, 0.72);
-    --surface: #0c1322;
-    --surface-hover: #162035;
-    --surface-alt: #080d1a;
-    --surface-glass: rgba(13, 20, 36, 0.65);
+    /* Enterprise Linear / Vercel Pro Slate Palette */
+    --bg-dark: #090d16;
+    --bg-darker: #05070c;
+    --bg-card: rgba(15, 23, 42, 0.75);
+    --surface: #0f172a;
+    --surface-hover: #1e293b;
+    --surface-alt: #0b1120;
+    --surface-glass: rgba(15, 23, 42, 0.7);
     
-    /* Vibrant Cyber Accents */
-    --primary-neon: #00f2fe;
-    --primary-teal: #14b8a6;
-    --primary-glow: rgba(0, 242, 254, 0.5);
-    --primary-glow-soft: rgba(0, 242, 254, 0.16);
+    /* Precision Engineering Accent Palette */
+    --primary-neon: #38bdf8;         /* High-contrast precision sky blue */
+    --primary-teal: #0ea5e9;
+    --primary-glow: rgba(56, 189, 248, 0.25);
+    --primary-glow-soft: rgba(56, 189, 248, 0.08);
     
-    --accent-purple: #c084fc;
-    --accent-purple-glow: rgba(192, 132, 252, 0.45);
+    --accent-purple: #818cf8;        /* Clean indigo accent */
+    --accent-purple-glow: rgba(129, 140, 248, 0.25);
     --accent-pink: #f43f5e;
-    --accent-blue: #38bdf8;
-    --accent-amber: #fbbf24;
-    --accent-amber-glow: rgba(251, 191, 36, 0.4);
+    --accent-blue: #3b82f6;
+    --accent-amber: #f59e0b;
+    --accent-amber-glow: rgba(245, 158, 11, 0.2);
     
     --text-main: #f8fafc;
     --text-muted: #94a3b8;
     --text-dim: #64748b;
-    --text-glow: rgba(248, 250, 252, 0.9);
+    --text-glow: rgba(248, 250, 252, 0.95);
     
     --danger: #ef4444;
-    --danger-glow: rgba(239, 68, 68, 0.35);
+    --danger-glow: rgba(239, 68, 68, 0.2);
     --success: #10b981;
-    --success-glow: rgba(16, 185, 129, 0.35);
+    --success-glow: rgba(16, 185, 129, 0.2);
     
-    --border: rgba(56, 189, 248, 0.18);
-    --border-bright: rgba(0, 242, 254, 0.45);
-    --border-purple: rgba(192, 132, 252, 0.4);
+    --border: rgba(255, 255, 255, 0.08);
+    --border-bright: rgba(56, 189, 248, 0.35);
+    --border-purple: rgba(129, 140, 248, 0.3);
     
-    --font-heading: 'Orbitron', -apple-system, sans-serif;
-    --font-subheading: 'Rajdhani', -apple-system, sans-serif;
-    --font-body: 'Outfit', -apple-system, sans-serif;
-    --font-mono: 'JetBrains Mono', monospace;
+    /* Clean Enterprise Typography */
+    --font-heading: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --font-subheading: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --font-mono: 'JetBrains Mono', SFMono-Regular, Menlo, Monaco, Consolas, monospace;
     
-    --ease-out-back: cubic-bezier(0.34, 1.56, 0.64, 1);
+    --ease-out-back: cubic-bezier(0.16, 1, 0.3, 1);
     --ease-smooth: cubic-bezier(0.16, 1, 0.3, 1);
 }
 
@@ -58,24 +60,25 @@ html {
 body {
     background-color: var(--bg-dark);
     background-image: 
-        radial-gradient(ellipse at 20% 0%, rgba(0, 242, 254, 0.08) 0%, transparent 50%),
-        radial-gradient(ellipse at 80% 15%, rgba(168, 85, 247, 0.09) 0%, transparent 45%),
-        radial-gradient(circle at 50% 85%, rgba(45, 212, 191, 0.05) 0%, transparent 60%),
-        linear-gradient(rgba(7, 11, 20, 0.96), rgba(4, 7, 13, 0.98));
+        radial-gradient(circle at 50% 0%, rgba(56, 189, 248, 0.07) 0%, transparent 60%),
+        radial-gradient(circle at 85% 20%, rgba(99, 102, 241, 0.05) 0%, transparent 45%),
+        linear-gradient(to bottom, #090d16, #05070c);
     background-attachment: fixed;
     color: var(--text-main);
     font-family: var(--font-body);
-    font-size: 16px;
+    font-size: 15px;
     line-height: 1.6;
-    letter-spacing: 0.01em;
+    letter-spacing: -0.01em;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
     position: relative;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
-/* Cyber Matrix Background Grid */
+/* Subtle Engineering Grid */
 body::before {
     content: '';
     position: fixed;
@@ -83,7 +86,7 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background-size: 40px 40px;
+    background-size: 48px 48px;
     background-image: 
         linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
         linear-gradient(to bottom, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
@@ -202,10 +205,9 @@ body::before {
 }
 
 .brand-text span {
-    background: linear-gradient(135deg, #00f2fe, #38bdf8);
+    background: linear-gradient(135deg, #38bdf8, #818cf8);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    text-shadow: 0 0 15px var(--primary-glow);
 }
 
 .nav-links {
@@ -232,17 +234,15 @@ body::before {
 }
 
 .nav-links a:hover {
-    color: #00f2fe;
-    background: rgba(0, 242, 254, 0.08);
-    text-shadow: 0 0 10px var(--primary-glow);
+    color: var(--text-main);
+    background: rgba(255, 255, 255, 0.05);
 }
 
 .nav-links a.active {
-    color: #00f2fe;
-    background: rgba(0, 242, 254, 0.12);
-    border: 1px solid rgba(0, 242, 254, 0.35);
-    box-shadow: 0 0 15px rgba(0, 242, 254, 0.2);
-    font-weight: 700;
+    color: var(--primary-neon);
+    background: rgba(56, 189, 248, 0.08);
+    border: 1px solid rgba(56, 189, 248, 0.2);
+    font-weight: 600;
 }
 
 .nav-user-badge {
@@ -1097,17 +1097,12 @@ footer {
 }
 
 footer a {
-    color: #00f2fe;
+    color: var(--primary-neon);
     text-decoration: none;
-    font-weight: 600;
-    transition: all 0.25s ease;
+    font-weight: 500;
+    transition: all 0.2s ease;
 }
 
 footer a:hover {
     color: #ffffff;
-    text-shadow: 0 0 10px rgba(0, 242, 254, 0.6);
-}
-
-footer a:hover {
-    text-shadow: 0 0 8px var(--primary-glow);
 }
