@@ -56,9 +56,9 @@ CREATE TABLE IF NOT EXISTS mission_submissions (
 );
 
 -- Performance Indexes for Sub-millisecond Queries
-CREATE INDEX IF NOT EXISTS idx_users_xp ON users(xp DESC);
-CREATE INDEX IF NOT EXISTS idx_missions_cat_diff ON missions(category, difficulty);
-CREATE INDEX IF NOT EXISTS idx_submissions_user_id ON mission_submissions(user_id, is_correct);
+CREATE INDEX idx_users_xp ON users(xp DESC);
+CREATE INDEX idx_missions_cat_diff ON missions(category, difficulty);
+CREATE INDEX idx_submissions_user_id ON mission_submissions(user_id, is_correct);
 
 -- ==============================================================
 -- Seed Data: Default Admin Credentials

@@ -9,6 +9,6 @@ if not exist "cloudflared.exe" (
     powershell -Command "Invoke-WebRequest -Uri 'https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-windows-amd64.exe' -OutFile 'cloudflared.exe' -UseBasicParsing"
 )
 
-echo Starting tunnel on http://localhost:8080...
-cloudflared.exe tunnel --protocol http2 --url http://localhost:8080
+echo Starting tunnel on http://localhost:8088...
+cloudflared.exe tunnel --protocol http2 --url http://localhost:8088
 pause

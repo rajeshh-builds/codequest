@@ -25,7 +25,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 public class DBConnection {
     private static final String DEFAULT_URL = "jdbc:mysql://localhost:3306/codequest_db?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC";
     private static final String DEFAULT_USER = "root";
-    private static final String DEFAULT_PASSWORD = "Chakri@5";
+    private static final String DEFAULT_PASSWORD = "";
 
     private static String url = DEFAULT_URL;
     private static String user = DEFAULT_USER;
