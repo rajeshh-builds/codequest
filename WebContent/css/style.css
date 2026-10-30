@@ -1,40 +1,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800;900&family=Rajdhani:wght@500;600;700&family=Outfit:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap');
 
 :root {
-    --bg-dark: #070b14;
-    --bg-darker: #04070d;
-    --bg-card: rgba(15, 23, 42, 0.75);
-    --surface: #0f172a;
-    --surface-hover: #17233f;
-    --surface-alt: #0a1120;
-    --surface-glass: rgba(15, 23, 42, 0.65);
+    --bg-dark: #060911;
+    --bg-darker: #030509;
+    --bg-card: rgba(13, 20, 36, 0.72);
+    --surface: #0c1322;
+    --surface-hover: #162035;
+    --surface-alt: #080d1a;
+    --surface-glass: rgba(13, 20, 36, 0.65);
     
     /* Vibrant Cyber Accents */
     --primary-neon: #00f2fe;
-    --primary-teal: #2dd4bf;
-    --primary-glow: rgba(0, 242, 254, 0.4);
-    --primary-glow-soft: rgba(45, 212, 191, 0.15);
+    --primary-teal: #14b8a6;
+    --primary-glow: rgba(0, 242, 254, 0.5);
+    --primary-glow-soft: rgba(0, 242, 254, 0.16);
     
-    --accent-purple: #a855f7;
-    --accent-purple-glow: rgba(168, 85, 247, 0.35);
-    --accent-pink: #ec4899;
+    --accent-purple: #c084fc;
+    --accent-purple-glow: rgba(192, 132, 252, 0.45);
+    --accent-pink: #f43f5e;
     --accent-blue: #38bdf8;
     --accent-amber: #fbbf24;
-    --accent-amber-glow: rgba(251, 191, 36, 0.35);
+    --accent-amber-glow: rgba(251, 191, 36, 0.4);
     
     --text-main: #f8fafc;
     --text-muted: #94a3b8;
     --text-dim: #64748b;
-    --text-glow: rgba(248, 250, 252, 0.85);
+    --text-glow: rgba(248, 250, 252, 0.9);
     
     --danger: #ef4444;
     --danger-glow: rgba(239, 68, 68, 0.35);
     --success: #10b981;
     --success-glow: rgba(16, 185, 129, 0.35);
     
-    --border: rgba(51, 75, 122, 0.4);
-    --border-bright: rgba(0, 242, 254, 0.3);
-    --border-purple: rgba(168, 85, 247, 0.35);
+    --border: rgba(56, 189, 248, 0.18);
+    --border-bright: rgba(0, 242, 254, 0.45);
+    --border-purple: rgba(192, 132, 252, 0.4);
     
     --font-heading: 'Orbitron', -apple-system, sans-serif;
     --font-subheading: 'Rajdhani', -apple-system, sans-serif;
@@ -42,7 +42,7 @@
     --font-mono: 'JetBrains Mono', monospace;
     
     --ease-out-back: cubic-bezier(0.34, 1.56, 0.64, 1);
-    --ease-smooth: cubic-bezier(0.4, 0, 0.2, 1);
+    --ease-smooth: cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 * {
@@ -1084,12 +1084,14 @@ textarea {
 /* Footer */
 footer {
     margin-top: auto;
-    padding: 1.8rem 1rem;
+    padding: 2.2rem 1rem;
     text-align: center;
     color: var(--text-dim);
-    border-top: 1px solid rgba(255, 255, 255, 0.06);
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
     font-size: 0.92rem;
-    background: rgba(4, 7, 13, 0.9);
+    background: rgba(3, 5, 9, 0.92);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
     position: relative;
     z-index: 10;
 }
@@ -1098,6 +1100,12 @@ footer a {
     color: #00f2fe;
     text-decoration: none;
     font-weight: 600;
+    transition: all 0.25s ease;
+}
+
+footer a:hover {
+    color: #ffffff;
+    text-shadow: 0 0 10px rgba(0, 242, 254, 0.6);
 }
 
 footer a:hover {

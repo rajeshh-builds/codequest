@@ -164,7 +164,7 @@
     </div>
 
     <footer>
-        &copy; 2026 CodeQuest Platform &bull; Operative Session Active
+        &copy; 2026 CodeQuest Platform &bull; Engineered by Rajesh &bull; Operative Session Active
     </footer>
 </body>
 </html>

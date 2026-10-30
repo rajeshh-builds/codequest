@@ -1,7 +1,7 @@
 # CodeQuest - Gamified Web-Based Programming Learning Platform
 
 [![Public Live Link](https://img.shields.io/badge/Public%20Live%20Website-Click%20To%20Open-00f2fe?style=for-the-badge&logo=googlechrome&logoColor=white)](https://consumer-artist-naples-steve.trycloudflare.com/codequest/)
-[![GitHub](https://img.shields.io/badge/GitHub-samachakradhar%2Fcodequest-181717?style=for-the-badge&logo=github)](https://github.com/samachakradhar/codequest)
+[![GitHub](https://img.shields.io/badge/GitHub-rajeshh--builds%2Fcodequest-181717?style=for-the-badge&logo=github)](https://github.com/rajeshh-builds/codequest)
 [![Java](https://img.shields.io/badge/Java-17%20%7C%2021%20%7C%2025-orange.svg)](https://www.oracle.com/java/)
 [![Tomcat](https://img.shields.io/badge/Apache%20Tomcat-10.1%20%7C%2011-yellow.svg)](https://tomcat.apache.org/)
 [![Database](https://img.shields.io/badge/MySQL-8.0+-blue.svg)](https://www.mysql.com/)
